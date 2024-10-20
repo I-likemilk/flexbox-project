@@ -1,20 +1,25 @@
 * {
     margin:0;
     padding:0;
+    font-family: "Montserrat";
 }
 body {
     display: flex;
     flex-direction: column; 
-    
+}
+p {
+    padding-top:10px;
 }
 
 /* Banner */
-.banner {
+.banner, .banner-left{
     display: flex;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(240, 240, 240);
     padding:10px;
-    margin:0;
+    justify-content: center;
+}
+.banner {
+    gap:250px;
 }
 .pfp {
     width:100px;
@@ -26,7 +31,6 @@ body {
     width: 15px;
     height:15px;
     margin-bottom:-2px;
-
 }
 .name {
     margin: 0;
@@ -48,11 +52,8 @@ li {
     align-items: flex-start;
     margin-top: 8px;
 }
-.left-links{
-    flex:1;
-}
 .right-links {
-    padding-top: 22px;
+    padding-top: 30px;
 }
 ul {
     list-style: none;
@@ -72,15 +73,78 @@ a:hover {
     text-decoration: underline;
 }
 /* Inner Body */
+
+/* Cards */
 .card-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: "Montserrat";
 }
 .card {
-    width:200px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+/* greeter */
+.greet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin-top: 100px;
+    max-height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.greet-left {
+    max-width: 400px;
+    height: 250px;
+    flex-grow:1;
+    padding-right: 50px;
+}
+
+.greet-image {
+    width:250px;
+    height:250px;
+    border-radius: 5%;
+    flex-grow:1;
+}
+.greet-intro {
+    color: #242424;
+    font-size: 50px;
+}
+.greet-title {
+    padding-top: 10px;
+    color: #333;
+}
+.greet-contact {
+    font-weight: bold;
+}
+/* about me */
+.about-me {
+    margin-top:50px;
+    display: flex;
+    flex:1;
+}
+h2 {
+    color:#525050;
+    font-size: 30px;
+}
+.about-me-img {
+    height: 450px;
+    width: 350px;
+    border-radius: 5%;
+}
+.about-me-text {
+    max-width: 300px;
+    margin-left: 75px;
+}
+
 /* Footer */
 
 .footer {
@@ -102,4 +166,3 @@ a:hover {
 .createdby {
     font-size: 15px;
 }
-
