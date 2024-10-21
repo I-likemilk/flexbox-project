@@ -19,7 +19,7 @@
                 <div class="name">Justin Nguyen</div>
                 <ul>
                     <li><a class="experience" href="#">Resume</a></li>
-                    <li><a class="experience" href="#">Projects</a></li>
+                    <li><a class="experience" onClick="document.getElementById('projects').scrollIntoView({block:'start', behavior:'smooth'});" >Projects</a></li>
                     <li><a class="experience" href="#">Contact</a></li>
                 </ul>
             </div>
@@ -87,8 +87,36 @@
             <div class="skills">
 
             </div>
+            <h2 id="projects" class="projects-header">
+                Projects
+            </h2>
             <div class="projects">
+                <div class="project-card">
+                    <img class="project-pic" src="images/earthquake.png">
+                    <div class="project-card-text">
+                        Earthquake Simulator
+                    </div>
+                    <p>
+                    <a href="https://justin-win.github.io/EarthquakeSim/" class="project-card-link" target="_blank"><img class="logo" src="images/gh-pic.png">
+                        Demo</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img class="project-pic" src="images/self-wojak.png">
+                    <div class="project-card-text">
+                        Text Rain
+                    </div>
+                    <p>
+                    <a href="https://justin-win.github.io/EarthquakeSim/" class="project-card-link" target="_blank"><img class="logo" src="images/gh-pic.png">
+                        Demo</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img class="project-pic" src="images/gophermarket.png">
+                </div>
+                <div class="project-card">
 
+                </div>
             </div>
             <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil impedit eius amet adipisci dolorum vel nostrum sit excepturi corporis tenetur cum, dolore incidunt blanditiis. Unde earum minima laboriosam eos!</div>
           </div>

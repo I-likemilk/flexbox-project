@@ -5,7 +5,7 @@
 }
 body {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 p {
     padding-top:10px;
@@ -42,7 +42,7 @@ p {
     font-family: "Montserrat";
 }
 li {
-    margin:0;   
+    margin:0;
     padding-right: 10px;
 }
 .left-links, .right-links {
@@ -71,6 +71,7 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 /* Inner Body */
 
@@ -143,6 +144,48 @@ h2 {
 .about-me-text {
     max-width: 350px;
     margin-left: 100px;
+}
+
+/* Projects */
+.projects-header {
+    margin-top: 100px;
+}
+.projects {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+}
+
+.project-card {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:450px;
+    height:325px;
+    border-radius: 1rem;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+}
+.project-pic {
+    max-width: 350px;
+    max-height: 200px;
+    border-radius:1rem;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.3);
+}
+.project-card-text {
+    padding-top:15px;
+    max-width: 300px;
+    text-align: center;
+    font-weight: 600;
+}
+.project-card-link {
+    color: #7d7d7d;
+    font-weight: bold;
 }
 
 /* Footer */
