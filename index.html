@@ -18,9 +18,11 @@
             <div class="left-links">
                 <div class="name">Justin Nguyen</div>
                 <ul>
-                    <li><a class="experience" href="#">Resume</a></li>
+                    <li><a class="experience" onClick="document.getElementById('about-me').scrollIntoView({block:'start', behavior:'smooth'});">About me</a>
+                    <li><a class="experience" href="resume/Justin_Nguyen_Resume.pdf" download>Resume</a></li>
                     <li><a class="experience" onClick="document.getElementById('projects').scrollIntoView({block:'start', behavior:'smooth'});" >Projects</a></li>
-                    <li><a class="experience" href="#">Contact</a></li>
+                    <!-- <li><a class="experience" href="#">Contact</a></li> -->
+                    <li><a class="experience" onClick="document.getElementById('footer').scrollIntoView({block:'end', behavior:'smooth'});" >Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -54,7 +56,7 @@
             </div>
         </div>
         <div class="card">
-            <h2>
+            <h2 id="about-me">
                 About Me
             </h2>
             <div class="about-me">
@@ -97,7 +99,7 @@
                         Earthquake Simulator
                     </div>
                     <p>
-                    <a href="https://justin-win.github.io/EarthquakeSim/" class="project-card-link" target="_blank"><img class="logo" src="images/gh-pic.png">
+                    <a href="https://justin-win.github.io/EarthquakeSim/" class="project-card-link" target="_blank"><img class="link-logo" src="images/kisspng-computer-icons-hyperlink-blog-chain-5ad2e34d0a6df7.2238595615237701890427.png">
                         Demo</a>
                     </p>
                 </div>
@@ -107,12 +109,31 @@
                         Text Rain
                     </div>
                     <p>
-                    <a href="https://justin-win.github.io/EarthquakeSim/" class="project-card-link" target="_blank"><img class="logo" src="images/gh-pic.png">
+                    <a href="https://justin-win.github.io/TextRain/" class="project-card-link" target="_blank"><img class="link-logo" src="images/kisspng-computer-icons-hyperlink-blog-chain-5ad2e34d0a6df7.2238595615237701890427.png">
+                        Demo</a>
+                    </p>
+                </div>
+                <div class="project-card">
+                    <img class="project-pic" src="images/donuthole.png">
+                    <div class="project-card-text">
+                        Donut Hole Physics
+                    </div>
+                    <p>
+                    <a href="https://justin-win.github.io/DonutHole/" class="project-card-link" target="_blank"><img class="link-logo" src="images/kisspng-computer-icons-hyperlink-blog-chain-5ad2e34d0a6df7.2238595615237701890427.png">
                         Demo</a>
                     </p>
                 </div>
                 <div class="project-card">
                     <img class="project-pic" src="images/gophermarket.png">
+                    <div class="project-card-text">
+                        Gopher Marketplace, Currently WIP
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img class="project-pic" src="images/eigenfaces.png">
+                    <div class="project-card-text">
+                        Facial Visual Recognition and Eigenfaces
+                    </div>
                 </div>
                 <div class="project-card">
 
@@ -120,7 +141,7 @@
             </div>
             <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nihil impedit eius amet adipisci dolorum vel nostrum sit excepturi corporis tenetur cum, dolore incidunt blanditiis. Unde earum minima laboriosam eos!</div>
           </div>
-        <div class="footer">
+        <div class="footer" id="footer">
                 <ul class="footer-ul">
                     <li><a href="https://www.linkedin.com/in/justin-win/" target="_blank"><img class="logo"src="images/li-pic.png"> /in/justin-win</a></li>
                     <li><a href="https://github.com/justin-win" target="_blank"><img class="logo" src="images/gh-pic.png"> /justin-win</a></li>
